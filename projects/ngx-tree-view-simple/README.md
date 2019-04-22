@@ -207,15 +207,19 @@ class  TreeConfig
 ```
 
 ### Contructor parameters:
-    theme   = 'default' | 'dark'
-    size    = '' | 'large' | 'small'
-    no_dots = true | false
+name | type | description
+--- | --- | ---
+theme   | string | 'default' or 'dark'
+size    | string | '' or 'large' or 'small'
+no_dots | boolean | true or false
 
 ### Members
-get theme
-get size
-get noDots
-get/set checkbox: boolean
-get/set preid: string
-get/set draggable: boolean
-get/set multiselect: boolean
+operator | member | type | description
+-------- | ------ | ---- | ---
+get | theme | string | get the theme
+get | size | string | het the size of the treeview component 
+get | noDots | boolean | 
+get/set | checkbox | boolean | get/set the checkbox flag
+get/set | preid | string | get/set preid string
+get/set | draggable | boolean | get/set the draggable flag
+get/set | multiselect | boolean | get/set the multiselect flag 
