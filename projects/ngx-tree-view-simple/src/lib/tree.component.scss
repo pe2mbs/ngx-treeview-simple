@@ -1,0 +1,17 @@
+.root-container-ul.root-children
+{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    padding-inline-start: 0;
+}
+
+.tv-default > .tree-container-ul > .tree-node 
+{
+    margin-left: 0;
+    margin-right: 0;
+}

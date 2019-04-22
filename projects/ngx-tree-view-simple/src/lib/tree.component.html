@@ -1,0 +1,19 @@
+<div [class]="rootClassName" role="tree">
+    <ul [class]="containerClassName" 
+        role="group"
+        (dragstart)="onDragStart( $event )"
+        (dragend)="onDragEnd( $event )"
+        (dragover)="onDragOver( $event )"
+        (dragenter)="onDragEnter( $event )"
+        (dragleave)="onDragLeave( $event )"
+        (drop)="onDrop( $event )">
+        <node *ngFor="let child of data; let i = index; trackBy: trackBy"
+            [data]="child"
+            [config]="config"
+            [last]="i === data.length - 1"
+            [path]="[ i ]"
+            (toggle)="onToggle( $event )"
+            (change)="onChange( $event )">
+        </node>
+    </ul>
+</div>
